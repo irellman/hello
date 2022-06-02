@@ -1,0 +1,13 @@
+.description {
+  padding: 0 10px;
+  font-size: 14px;
+  white-space: pre-line;
+}
+
+.more {
+  color: rgb(160, 160, 160);
+
+  &:hover {
+    cursor: pointer;
+  }
+}

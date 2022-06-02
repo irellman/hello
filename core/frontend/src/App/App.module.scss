@@ -1,0 +1,31 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+a {
+  color: rgb(0, 55, 107);
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Helvetica Neue, 'Noto Sans Armenian', 'Noto Sans Bengali', 'Noto Sans Cherokee', 'Noto Sans Devanagari', 'Noto Sans Ethiopic', 'Noto Sans Georgian', 'Noto Sans Hebrew', 'Noto Sans Kannada', 'Noto Sans Khmer', 'Noto Sans Lao', 'Noto Sans Osmanya', 'Noto Sans Tamil', 'Noto Sans Telugu', 'Noto Sans Thai', sans-serif;
+  background-color: #fafafa;
+}
+
+.page {
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  @media (min-width: 640px) {
+    & {
+      margin-top: 60px;
+      margin-bottom: 0;
+    }
+  }
+}

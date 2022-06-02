@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+  font-weight: 600;
+  color: rgb(40, 40, 40);
+  transition: .25s;
+
+  &:hover {
+    cursor: pointer;
+    color: rgb(160, 160, 160);
+  }
+
+  &_active {
+    @extend .container;
+    color: rgb(237, 73, 86);
+
+    &:hover {
+      color: rgb(237, 73, 86);
+    }
+  }
+}
+
+.like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: .25s;
+}
+
+.heart_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+@keyframes show {
+  0% {
+    transform: scale(0);
+    color: rgb(100, 100, 100);
+  }
+  40% {
+    transform: scale(1.1);
+    color: rgb(237, 72, 87);
+  }
+  100% {
+    transform: scale(1);
+    color: rgb(237, 72, 87);
+  }
+}
+
+.filled_heart {
+  animation: show .25s;
+  color: rgb(237, 72, 87);
+  position: absolute;
+}
+
+.heart {
+  position: absolute;
+  color: inherit;
+  transition: .25s;
+}
+
+.value {
+  color: inherit;
+}

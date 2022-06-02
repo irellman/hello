@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/827.fa8432a1.chunk.js","mappings":"mKAEA,ECFa,WACX,OACE","sources":["pages/Home/index.ts","pages/Home/Home.tsx"],"sourcesContent":["import Home from \"./Home\";\n\nexport default Home;","const Home = () => {\n  return (\n    <div>hello</div>\n  );\n}\n\nexport default Home;"],"names":[],"sourceRoot":""}

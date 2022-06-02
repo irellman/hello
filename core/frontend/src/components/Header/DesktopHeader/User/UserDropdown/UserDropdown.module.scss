@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 200px;
+  left: -90px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px rgb(220, 220, 220);
+  opacity: 0;
+  top: 25px;
+  visibility: hidden;
+  overflow: hidden;
+  z-index: 10000;
+  pointer-events: none;
+  transition: top .25s, opacity .25s;
+
+  &_visible {
+    @extend .container;
+    top: 35px;
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+  }
+}
+
+.option {
+  display: grid;
+  grid-template-columns: 15px 1fr;
+  align-items: center;
+  color: rgb(40, 40, 40);
+  grid-gap: 10px;
+  font-size: 14px;
+  padding: 10px;
+  transition: .25s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(240, 240, 240);
+  }
+}
+
+.icon {
+  height: 13px;
+  width: 13px;
+  margin: auto;
+}

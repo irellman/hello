@@ -1,0 +1,11 @@
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.svg {
+  animation: rotate .8s steps(8) infinite;
+  width: 25px;
+  height: 25px;
+}

@@ -1,0 +1,41 @@
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  width: 100%;
+  height: 25px;
+}
+
+.left_actions {
+  display: flex;
+  grid-gap: 25px;
+}
+
+.right_actions {
+  display: flex;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+  font-weight: 600;
+  color: rgb(40, 40, 40);
+  transition: .25s;
+
+  &:hover {
+    cursor: pointer;
+    color: rgb(160, 160, 160);
+  }
+
+  &:hover > .icon {
+    color: rgb(160, 160, 160);
+    transition: .25s;
+  }
+}
+
+.icon {
+  color: rgb(40, 40, 40);
+  transition: .25s;
+}

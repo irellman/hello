@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  position: relative;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 0 0 1px 1px rgb(220, 220, 220);
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  position: relative;
+}

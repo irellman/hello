@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7px;
+}
+
+.image {
+  height: 29px;
+  width: 103px;
+  background-size: cover;
+  background-image: url("http://127.0.0.1:8000/static/instagram.png");
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  grid-gap: 20px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

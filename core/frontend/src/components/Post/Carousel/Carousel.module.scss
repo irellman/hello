@@ -1,0 +1,114 @@
+.container {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+  max-height: 620px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 5px;
+}
+
+.controls {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: .25s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.arrows {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: 50%;
+  position: absolute;
+  padding: 0 20px;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(255, 255, 255, .5);
+  border-radius: 50%;
+  transition: .25s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+.images {
+  display: grid;
+  transition: margin-left .25s;
+  height: 100%;
+}
+
+.image_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.indexing {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  grid-gap: 10px;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10px;
+}
+
+.index {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(255, 255, 255, .5);
+  border-radius: 50%;
+  transition: .25s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255, .75);
+  }
+
+  &_active {
+    @extend .index;
+    background-color: rgb(255, 255, 255);
+
+    &:hover {
+      background-color: rgb(255, 255, 255);
+    }
+  }
+}
+
+.icon {
+  display: flex;
+  margin: auto;
+
+  &_left {
+    display: flex;
+    margin: auto;
+    transform: rotate(270deg);
+  }
+
+  &_right {
+    display: flex;
+    margin: auto;
+    transform: rotate(90deg);
+  }
+}

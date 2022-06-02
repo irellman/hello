@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.user {
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 50%;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

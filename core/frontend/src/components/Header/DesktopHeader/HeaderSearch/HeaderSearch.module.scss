@@ -1,0 +1,43 @@
+.search {
+  display: flex;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+  position: relative;
+  width: 250px;
+  border-radius: 4px;
+}
+
+.input {
+  color: rgb(40, 40, 40);
+  background-color: rgb(240, 240, 240);
+  font-size: 16px;
+  padding: 10px 10px;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  border-radius: 4px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+  width: 100%;
+  padding: 0 10px;
+  position: absolute;
+  pointer-events: none;
+  color: rgb(160, 160, 160);
+  background-color: rgb(240,240,240);
+  border-radius: 4px;
+}
+
+.placeholder {
+  line-height: 25px;
+}
+
+.icon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: rgb(160, 160, 160);
+}

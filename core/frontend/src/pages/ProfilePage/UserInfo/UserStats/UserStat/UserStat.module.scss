@@ -1,0 +1,15 @@
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  color: rgb(40, 40, 40);
+  font-weight: 600;
+}
+
+.type {
+  color: rgb(160, 160, 160);
+  font-size: 14px;
+}

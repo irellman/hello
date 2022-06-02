@@ -1,0 +1,19 @@
+.subscribe {
+  color: rgb(0, 160, 245);
+  font-weight: 600;
+  font-size: 14px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.unsubscribe {
+  color: rgb(40, 40, 40);
+  font-weight: 600;
+  font-size: 14px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,9 @@
+.bookmark {
+  color: rgb(40, 40, 40);
+  transition: .25s;
+
+  &:hover {
+    cursor: pointer;
+    color: rgb(160, 160, 160);
+  }
+}
